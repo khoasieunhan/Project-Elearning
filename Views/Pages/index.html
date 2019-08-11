@@ -1,0 +1,1822 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code-House</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../../node_modules/mdbootstrap/css/bootstrap.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="../../Assets/css/animate.css">
+    <!-- Sweetalert2 -->
+    <link rel="stylesheet" href="../../Assets/css/sweetalert2.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <!-- SweetAlert -->
+    <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <!-- mdbootstrap -->
+    <link rel="stylesheet" href="../../node_modules/mdbootstrap/css/mdb.min.css">
+    <!-- Owlcarousel -->
+    <link rel="stylesheet" href="../../Assets/css/owl.carousel.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../../Assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid banner-top" id="home" style="overflow: hidden;">
+        <!-- Header -->
+        <header>
+            <div class="row">
+                <div class="col-md-3 top-info text-left mt-lg-4">
+                    <h6>Need Help</h6>
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone"></i>Call</li>
+                        <li class="number-phone mt-3">0123456789</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 logo-code-house text-center">
+                    <h1 class="logo--code-house">
+                        <a class="navbar-brand" href="index.html">Code-House</a>
+                    </h1>
+                </div>
+                <div class="col-md-3 top-info-sign text-right mt-lg-4">
+                    <div id="menu-log-reg">
+                        <ul class="sign-in">
+                            <li id="button__sign" class="button-sign">
+                                <a href="#" class="btn-sign" data-toggle="modal" data-target="#myModal1">
+                                    <span class="fa fa-unlock-alt" aria-hidden="true"></span>
+                                    Sign In
+                                </a>
+                            </li>
+
+                            <li id="button__regis">
+                                <a href="#" data-toggle="modal" data-target="#myModal2">
+                                    <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+                            </li>
+                            <!-- <li class="button-regis">
+                                        <a href="#" class="btn-regis">
+                                            <span class="fa fa-registered"></span>
+                                        </a>
+                                    </li> -->
+                        </ul>
+                    </div>
+
+                    <input type="text" class="input-search" name="search" placeholder="Search..">
+                </div>
+                <label class="top-log mx-auto"></label>
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+
+                    <div class="container">
+
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse justify-content-center font-weight-bold" id="basicExampleNav">
+
+                            <!-- Links -->
+                            <ul class="navbar-nav nav-mega">
+                                <li class="nav-item active">
+                                    <a class="nav-link ml-lg-0" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <!-- Dropdown -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="course.html">
+                                        Course
+                                    </a>
+                                    <!-- <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div> -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Categories
+                                    </a>
+                                    <!-- <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div> -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- Links -->
+                        </div>
+                    </div>
+                </nav>
+                <!--/.Navbar-->
+            </div>
+        </header>
+
+        <!-- signin Model -->
+        <!-- Modal1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body modal-body-sub_agile">
+                        <div class="main-mailposi">
+                            <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        </div>
+                        <div class="modal_body_left modal_body_left1">
+                            <h3 class="agileinfo_sign">Sign In </h3>
+                            <p>
+                                Sign In now, Let's start your Code House. Don't have an account?
+                                <a href="#" data-toggle="modal" data-target="#myModal2">
+                                    Sign Up Now</a>
+                            </p>
+                            <!-- <form> -->
+
+                            <div class="form-group">
+                                <label for="taikhoan"></label>
+                                <input type="text" class="form-control TaiKhoan mb-4" id="defaultLoginFormTK"
+                                    placeholder="Username" style="padding-left: 10px;">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd"></label>
+                                <input type="password" class="form-control MatKhau mb-4" id="defaultLoginFormMK"
+                                    placeholder="Password" style="padding-left: 10px;">
+                            </div>
+                            <!-- <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> Remember me
+                                    </label>
+                                </div> -->
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                            <!-- Password -->
+                            <!-- <input type="password" id="defaultLoginFormMK" class="MatKhau form-control mb-4"
+                                    placeholder="Password"> -->
+
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <!-- Remember me -->
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember
+                                            me</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- Forgot password -->
+                                    <a href="">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <!-- Sign in button -->
+                            <button type="submit" class="btn btn-info btn-block my-4 submit__signin" id="submit-signin">
+                                <div class="pr-1 preloader">
+                                    <div class="loader">
+                                        <span style="visibility:hidden"></span>
+                                    </div>
+                                </div>
+                                Sign in
+                            </button>
+
+                            <!-- </form> -->
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!-- //Modal content-->
+            </div>
+        </div>
+        <!-- //Modal1 -->
+        <!-- //signin Model -->
+
+        <!-- signup Model -->
+        <!-- Modal2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body modal-body-sub_agile">
+                        <div class="main-mailposi">
+                            <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        </div>
+                        <div class="modal_body_left modal_body_left1">
+                            <h3 class="agileinfo_sign">Sign Up</h3>
+                            <p>
+                                Come join the Code House! Let's set up your Account.
+                            </p>
+                            <form>
+
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <!-- First name -->
+                                        <input type="text" id="defaultRegisterFormFirstName" class="HoTen form-control"
+                                            placeholder="First name" style="padding-left: 10px;">
+                                    </div>
+                                    <div class="col">
+                                        <!-- Last name -->
+                                        <input type="text" id="defaultRegisterFormLastName" class="HoTen form-control"
+                                            placeholder="Last name" style="padding-left: 10px;">
+                                    </div>
+                                </div>
+
+                                <!-- E-mail -->
+                                <input type="text" id="defaultRegisterFormUsername" class="Account form-control mb-4"
+                                    placeholder="Username" style="padding-left: 10px;">
+
+                                <input type="password" id="defaultRegisterFormPassword" class="Password form-control"
+                                    placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock"
+                                    style="padding-left: 10px;">
+                                <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                    At least 8 characters and 1 digit
+                                </small>
+
+                                <!-- Password -->
+                                <!-- <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                        At least 8 characters and 1 digit
+                                    </small> -->
+                                <input type="email" id="defaultRegisterFormEmail" class="Email form-control mb-4"
+                                    placeholder="E-mail" style="padding-left: 10px;">
+
+                                <!-- Phone number -->
+                                <input type="text" id="defaultRegisterPhonePassword" class="phoneNumber form-control"
+                                    placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock"
+                                    style="padding-left: 10px;">
+                                <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                                    Optional - for two step authentication
+                                </small>
+
+                                <!-- Newsletter -->
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                                    <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe
+                                        to
+                                        our
+                                        newsletter
+                                    </label>
+                                </div>
+                                <!-- Sign up button -->
+                                <div class="modal-footer">
+                                    <button class="btn btn-info my-4 btn-block submit-regis dangky" id="submit-regis">Sign
+                                        up</button>
+                                </div>
+                            </form>
+                            <p>
+                                <a href="#">By clicking register, I agree to your terms</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Modal content-->
+            </div>
+        </div>
+        <!-- //Modal2 -->
+        <!-- //signup Model -->
+
+
+        <!-- End-Header -->
+        <!-- Banner -->
+        <section>
+            <div class="banner-img">
+
+            </div>
+        </section>
+        <!-- End-banner -->
+        <!-- Banner-body-course -->
+        <section class="banner-bottom-code py-lg-5 py-3">
+            <div class="container-fluid">
+                <div class="inner-sec-shop px-lg-4 px-3">
+                    <h3 class="tittle-banner my-lg-4 my-4">Course</h3>
+                </div>
+                <div class="row px-lg-4 px-3 Course__course">
+                    <!-- Course -->
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course" id="images_course">
+                                    <img src="../../Assets/img/angular-14a0f6532f.png" alt="" class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" id="quickView" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price" id="name_Course">
+                                                <h4>
+                                                    <a href="Detail.html" id="name_Course">Angular</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course">
+                                    <img src="../../Assets/img/mongodb_300x300.png" alt="" class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price">
+                                                <h4>
+                                                    <a href="Detail.html">MongoDB</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money ">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course">
+                                    <img src="../../Assets/img/d8dbae64f62cffa8b9747090cae3c49b.jpg" alt="" class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price">
+                                                <h4>
+                                                    <a href="Detail.html">Nodejs</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money ">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course">
+                                    <img src="../../Assets/img/git-la-gi-tai-sao-su-dung-git.jpg" alt="" class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price">
+                                                <h4>
+                                                    <a href="Detail.html">Git</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money ">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-lg-4 px-3 mt-lg-3 mt-0">
+                    <!-- Course -->
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course">
+                                    <img src="../../Assets/img/1_6kK9j74vyOmXYm1gN6ARhQ.png" alt="" class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price">
+                                                <h4>
+                                                    <a href="Detail.html">React</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money ">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course">
+                                    <img src="../../Assets/img/typescript-logo-B29A3F462D-seeklogo.com.png" alt=""
+                                        class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price">
+                                                <h4>
+                                                    <a href="Detail.html">Typescript</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money ">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course">
+                                    <img src="../../Assets/img/TT-HTML5CSS3Responsive_grande.gif" alt="" class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price">
+                                                <h4>
+                                                    <a href="Detail.html">HTML5</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money ">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-course">
+                        <div class="product-course-img">
+                            <div class="product-course-info">
+                                <div class="product-thumb-course">
+                                    <img src="../../Assets/img/jquery-modern-logo.jpg" alt="" class="img-fluid">
+                                    <div class="pro-info-course">
+                                        <div class="inner-pro-course">
+                                            <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <span class="product-new-top">New</span>
+                                </div>
+                                <div class="item-info-product">
+                                    <div class="info-product-price">
+                                        <div class="grid_meta">
+                                            <div class="product_price">
+                                                <h4>
+                                                    <a href="Detail.html">Jquery</a>
+                                                </h4>
+                                                <!-- <div class="grid-price mt-2" id="code_course">
+                                                    <span value=""><i class="fa fa-key"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="views_course">
+                                                    <span value=""><i class="fa fa-eye"></i></span>
+                                                </div>
+                                                <div class="grid-price mt-2" id="people_course">
+                                                    <span value=""><i class="fa fa-user"></i></span>
+                                                </div> -->
+                                                <div class="grid-price mt-2">
+                                                    <span class="money ">$575.00</span>
+                                                </div>
+                                            </div>
+                                            <ul class="stars">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="googles single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <input type="hidden" name="cmd" value="_cart">
+                                                <input type="hidden" name="add" value="1">
+                                                <input type="hidden" name="googles_item" value="Farenheit">
+                                                <input type="hidden" name="amount" value="575.00">
+                                                <button type="submit" class="googles-cart googles-cart">
+                                                    <i class="fa fa-cart-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End-Banner-body -->
+        <!-- Background-middle -->
+        <section>
+            <div class="row">
+                <div class="background-middle">
+
+                </div>
+            </div>
+        </section>
+        <!-- End-Background-middle -->
+        <!-- View course -->
+        <section>
+            <div class="row px-lg-4 px-3 mt-lg-3 mt-0">
+                <div class="container-fluid">
+                    <div class="view-course px-lg-4 px-3">
+                        <h3 class="tittle-view-course my-lg-4 my-4">Students are viewing</h3>
+                    </div>
+                    <div class="owl-carousel owl-theme row owl-loaded owl-drag px-lg-4 px-3">
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/angular-14a0f6532f.png" alt="" class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">Angular</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/mongodb_300x300.png" alt="" class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">MongoDB</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/d8dbae64f62cffa8b9747090cae3c49b.jpg" alt="" class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">Nodejs</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/git-la-gi-tai-sao-su-dung-git.jpg" alt="" class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">Git</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/1_6kK9j74vyOmXYm1gN6ARhQ.png" alt="" class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">React</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/typescript-logo-B29A3F462D-seeklogo.com.png" alt=""
+                                            class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">Typescript</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/TT-HTML5CSS3Responsive_grande.gif" alt="" class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">HTML5-CSS3</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-course-img">
+                                <div class="product-course-info">
+                                    <div class="product-thumb-course">
+                                        <img src="../../Assets/img/jquery-modern-logo.jpg" alt="" class="img-fluid">
+                                        <div class="pro-info-course">
+                                            <div class="inner-pro-course">
+                                                <a href="Detail.html" class="link-pro-course">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product">
+                                        <div class="info-product-price">
+                                            <div class="grid_meta">
+                                                <div class="product_price">
+                                                    <h4>
+                                                        <a href="Detail.html">Jquery</a>
+                                                    </h4>
+                                                    <div class="grid-price mt-2">
+                                                        <span class="money ">$575.00</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="stars">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="googles single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                    <input type="hidden" name="cmd" value="_cart">
+                                                    <input type="hidden" name="add" value="1">
+                                                    <input type="hidden" name="googles_item" value="Farenheit">
+                                                    <input type="hidden" name="amount" value="575.00">
+                                                    <button type="submit" class="googles-cart googles-cart">
+                                                        <i class="fa fa-cart-plus"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End-view-course -->
+        <!-- Re-view -->
+        <section class="review py-lg-4 py-3 mt-4">
+            <div class="review-section py-lg-4 py-3">
+                <h3 class="review-title text-center my-lg-4 my-4">Review Course</h3>
+                <div id="demod" class="carousel slide" data-ride="carousel">
+                    <!-- <ul class="carousel-indicators">
+                        <li data-target="#demod" data-slide-to="0" class="active"></li>
+                        <li data-target="#demod" data-slide-to="1"></li>
+                        <li data-target="#demod" data-slide-to="2"></li>
+                    </ul> -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <!-- <img src="la.jpg" alt="Los Angeles" width="1100" height="500"> -->
+                            <div class="text-center review-grid">
+                                <h3>Anamaria
+                                    <span>Customer</span>
+                                </h3>
+                                <label>United States</label>
+                                <p>Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac
+                                    scelerisque
+                                    nisl nibh vel lacus. Proin eget gravida odio. Donec ullamcorper est eu accumsan
+                                    cursus.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="chicago.jpg" alt="Chicago" width="1100" height="500"> -->
+                            <div class="text-center review-grid">
+                                <h3>Esmeralda
+                                    <span>Customer</span>
+                                </h3>
+                                <label>United States</label>
+                                <p>Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac
+                                    scelerisque
+                                    nisl nibh vel lacus. Proin eget gravida odio. Donec ullamcorper est eu accumsan
+                                    cursus.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="ny.jpg" alt="New York" width="1100" height="500"> -->
+                            <div class="text-center review-grid">
+                                <h3>Gretchen
+                                    <span>Customer</span>
+                                </h3>
+                                <label>United States</label>
+                                <p>Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac
+                                    scelerisque
+                                    nisl nibh vel lacus. Proin eget gravida odio. Donec ullamcorper est eu accumsan
+                                    cursus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev test" href="#demod" data-slide="prev">
+                        <span class="fa fa-long-arrow-left"></span>
+                    </a>
+                    <a class="carousel-control-next test" href="#demod" data-slide="next">
+                        <span class="fa fa-long-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End-Review -->
+        <!-- partner -->
+        <section class="partner py-lg-4 py-3 mt-4">
+            <div class="partner-code py-lg-4 py-3">
+                <h3 class="partner-title text-center my-lg-4 my-4">Partner Code-House</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="" class="code-link">
+                            <img src="../../Assets/img/elca_logo_big_new.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" class="code-link">
+                            <img src="../../Assets/img/csc_new.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" class="code-link">
+                            <img src="../../Assets/img/LOGO_MYCLASS_new.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" class="code-link">
+                            <img src="../../Assets/img/harveynash_new.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" class="code-link">
+                            <img src="../../Assets/img/Global_NEW.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" class="code-link">
+                            <img src="../../Assets/img/vinova_new.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- partner -->
+    <!-- Footer -->
+    <footer class="footer py-lg-5 py-3">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row footer-section">
+                <div class="col-md-3 footer--grid">
+                    <div class="footer-title">
+                        <h3>About Us</h3>
+                    </div>
+                    <div class="footer-text">
+                        <p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
+                            consectetur
+                            sed, convallis at tellus. Nulla porttitor accumsana tincidunt.</p>
+                        <ul class="footer-social text-left mt-lg-4 mt-3">
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fa fa-google-plus"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fa fa-rss"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fa fa-vk"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 footer--grid">
+                    <div class="footer-title">
+                        <h3>Get in touch</h3>
+                    </div>
+                    <div class="contact-info">
+                        <h4>LOCATION:</h4>
+                        <p>0926k 4th block building, king Avenue, New York City.</p>
+                    </div>
+                    <div class="phone">
+                        <h4>CONTACT:</h4>
+                        <p>Phone: +121 098 8907 9987</p>
+                        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 footer--grid">
+                    <div class="footer-title">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <ul class="link">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Course</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer--grid">
+                    <div class="footer-title">
+                        <h3>Sign up for your offers</h3>
+                    </div>
+                    <div class="footer-text">
+                        <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                        <form action="#" method="post">
+                            <input type="email" class="form-control" name="email" placeholder="Enter your email..."
+                                required>
+                            <button class="btn1">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right-code mt-4">
+                <p class="copy-right text-center">
+                    © 2018 Goggles. All Rights Reserved | Design by
+                    <a href="#">Minh Khoa</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End-footer -->
+    <!-- scrolltop -->
+    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+    <!-- End-scrolltop -->
+    </div>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../node_modules/mdbootstrap/js/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+<script src="../../node_modules/mdbootstrap/js/popper.min.js"></script>
+<script src="../../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+<!-- mdbootstrap -->
+<script src="../../node_modules/mdbootstrap/js/mdb.min.js"></script>
+
+<!-- Sweetalert2 -->
+<script src="../../Assets/js/sweetalert2.all.min.js"></script>
+<!-- WOWjs -->
+<script src="../../Assets/js/wow.min.js"></script>
+<!-- Owlcaroul -->
+<script src="../../Assets/js/owl.carousel.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- Owl -->
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            // rtl: true,
+            items: 4,
+            loop: true,
+            margin: 10,
+            nav: true,
+            // autoplay: true,
+            // autoplayTimeout: 2000,
+            // autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1170: {
+                    items: 4,
+                    nav: true
+                }
+            }
+        })
+    });
+</script>
+<script src="../../dist/user.js"></script>
+<script src="../../dist/admin.js"></script>
+
+
+<!-- SweetAlert -->
+<script src="../../node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+<!-- ckEditor -->
+<script src="../../Assets/plugins/ckeditor/ckeditor/ckeditor.js"></script>
+
+<!-- Owl -->
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            // rtl: true,
+            items: 4,
+            loop: true,
+            margin: 10,
+            nav: true,
+            // autoplay: false,
+            // autoplayTimeout: 2000,
+            // autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1170: {
+                    items: 4,
+                    nav: true
+                }
+            }
+        })
+    });
+</script>
+
+<script>
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+</script>
+
+</html>

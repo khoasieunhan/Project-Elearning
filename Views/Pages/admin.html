@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code-House</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../../node_modules/mdbootstrap/css/bootstrap.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="../../Assets/css/animate.css">
+    <!-- Sweetalert2 -->
+    <link rel="stylesheet" href="../../Assets/css/sweetalert2.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <!-- mdbootstrap -->
+    <link rel="stylesheet" href="../../node_modules/mdbootstrap/css/mdb.min.css">
+    <!-- <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"> -->
+    <link rel="stylesheet" href="../../node_modules/mdbootstrap/css/addons/datatables.min.css">
+    <!-- Respon-tabs -->
+    <link rel="stylesheet" href="../../Assets/css/easy-responsive-tabs.css">
+    <!-- Owlcarousel -->
+    <link rel="stylesheet" href="../../Assets/css/owl.carousel.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../../Assets/css/admin.css">
+</head>
+
+<body>
+    <div class="container-fluid banner-top" id="home" style="overflow: hidden; background-color: #fff;">
+        <!-- Header -->
+        <header>
+            <div class="row">
+                <div class="col-md-3 top-info text-left mt-lg-4">
+                    <h6>Need Help</h6>
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone"></i>Call</li>
+                        <li class="number-phone mt-3">0123456789</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 logo-code-house text-center">
+                    <h1 class="logo--code-house">
+                        <a class="navbar-brand" href="index.html">Code-House</a>
+                    </h1>
+                </div>
+                <div class="col-md-3 top-info-sign text-right mt-lg-4">
+                    <div id="menu-log-reg">
+                        <ul class="sign-in">
+                            <li id="button__sign" class="button-sign">
+                                <a href="#" class="btn-sign" data-toggle="modal" data-target="#myModal1">
+                                    <span class="fa fa-unlock-alt" aria-hidden="true"></span>
+                                    Sign In
+                                </a>
+                            </li>
+
+                            <li id="button__regis">
+                                <a href="#" data-toggle="modal" data-target="#myModal2">
+                                    <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+                            </li>
+                            <!-- <li class="button-regis">
+                                        <a href="#" class="btn-regis">
+                                            <span class="fa fa-registered"></span>
+                                        </a>
+                                    </li> -->
+                        </ul>
+                    </div>
+                    <input type="text" class="input-search" name="search" placeholder="Search..">
+                </div>
+                <label class="top-log mx-auto"></label>
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+
+                    <div class="container">
+
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse justify-content-center font-weight-bold" id="basicExampleNav">
+
+                            <!-- Links -->
+                            <ul class="navbar-nav nav-mega">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav--active ml-lg-0" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <!-- Dropdown -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Course
+                                    </a>
+                                    <!-- <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div> -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Categories
+                                    </a>
+                                    <!-- <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div> -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- Links -->
+                        </div>
+                    </div>
+                </nav>
+                <!--/.Navbar-->
+            </div>
+        </header>
+        <!-- Modal Popup -->
+        <!-- signin Model -->
+        <!-- Modal1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body modal-body-sub_agile">
+                        <div class="main-mailposi">
+                            <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        </div>
+                        <div class="modal_body_left modal_body_left1">
+                            <h3 class="agileinfo_sign">Sign In </h3>
+                            <p>
+                                Sign In now, Let's start your Code House. Don't have an account?
+                                <a href="#" data-toggle="modal" data-target="#myModal2">
+                                    Sign Up Now</a>
+                            </p>
+                            <!-- <form> -->
+
+                            <div class="form-group">
+                                <label for="taikhoan"></label>
+                                <input type="text" class="form-control TaiKhoan mb-4" id="defaultLoginFormTK"
+                                    placeholder="Username" style="padding-left: 10px;">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd"></label>
+                                <input type="password" class="form-control MatKhau mb-4" id="defaultLoginFormMK"
+                                    placeholder="Password" style="padding-left: 10px;">
+                            </div>
+                            <!-- <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> Remember me
+                                    </label>
+                                </div> -->
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                            <!-- Password -->
+                            <!-- <input type="password" id="defaultLoginFormMK" class="MatKhau form-control mb-4"
+                                    placeholder="Password"> -->
+
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <!-- Remember me -->
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember
+                                            me</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- Forgot password -->
+                                    <a href="">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <!-- Sign in button -->
+                            <button type="submit" class="btn btn-info btn-block my-4 submit__signin" id="submit-signin">
+                                <div class="pr-1 preloader">
+                                    <div class="loader">
+                                        <span style="visibility:hidden"></span>
+                                    </div>
+                                </div>
+                                Sign in
+                            </button>
+
+                            <!-- </form> -->
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!-- //Modal content-->
+            </div>
+        </div>
+        <!-- //Modal1 -->
+        <!-- //signin Model -->
+
+        <!-- signup Model -->
+        <!-- Modal2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body modal-body-sub_agile">
+                        <div class="main-mailposi">
+                            <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        </div>
+                        <div class="modal_body_left modal_body_left1">
+                            <h3 class="agileinfo_sign">Sign Up</h3>
+                            <p>
+                                Come join the Code House! Let's set up your Account.
+                            </p>
+                            <form>
+
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <!-- First name -->
+                                        <input type="text" id="defaultRegisterFormFirstName" class="HoTen form-control"
+                                            placeholder="First name" style="padding-left: 10px;">
+                                    </div>
+                                    <div class="col">
+                                        <!-- Last name -->
+                                        <input type="text" id="defaultRegisterFormLastName" class="HoTen form-control"
+                                            placeholder="Last name" style="padding-left: 10px;">
+                                    </div>
+                                </div>
+
+                                <!-- E-mail -->
+                                <input type="text" id="defaultRegisterFormUsername" class="Account form-control mb-4"
+                                    placeholder="Username" style="padding-left: 10px;">
+
+                                <input type="password" id="defaultRegisterFormPassword" class="Password form-control"
+                                    placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock"
+                                    style="padding-left: 10px;">
+                                <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                    At least 8 characters and 1 digit
+                                </small>
+
+                                <!-- Password -->
+                                <!-- <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                        At least 8 characters and 1 digit
+                                    </small> -->
+                                <input type="email" id="defaultRegisterFormEmail" class="Email form-control mb-4"
+                                    placeholder="E-mail" style="padding-left: 10px;">
+
+                                <!-- Phone number -->
+                                <input type="text" id="defaultRegisterPhonePassword" class="phoneNumber form-control"
+                                    placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock"
+                                    style="padding-left: 10px;">
+                                <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                                    Optional - for two step authentication
+                                </small>
+
+                                <!-- Newsletter -->
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                                    <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe
+                                        to
+                                        our
+                                        newsletter
+                                    </label>
+                                </div>
+                                <!-- Sign up button -->
+                                <div class="modal-footer">
+                                    <button class="btn btn-info my-4 btn-block submit-regis dangky" id="submit-regis">Sign
+                                        up</button>
+                                </div>
+                            </form>
+                            <p>
+                                <a href="#">By clicking register, I agree to your terms</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Modal content-->
+            </div>
+        </div>
+        <!-- //Modal2 -->
+        <!-- //signup Model -->
+        <!-- End-Header -->
+        <!-- Banner -->
+        <section>
+            <div class="banner-img">
+
+            </div>
+        </section>
+        <!-- End-banner -->
+
+        <!-- Link -->
+        <section class="link py-lg-5 py-3">
+            <div class="detail-section container-fluid px-lg-5 px-3">
+                <div class="detail-title row">
+                    <ul class="detail-course">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <i>/</i>
+                        </li>
+                        <li>Admin</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End-link -->
+
+        <!-- Information -->
+        <section id="profile" class="mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-xl-3">
+                        <div class="avatar">
+                            <img src="../../Assets/img/mongodb_300x300.png" alt="" class="avatar-user img-fluid">
+                            <p class="avatar-user--name mb-0 mt-2 ml-1"></p>
+                            <p class="avatar-user--type lead mb-2 ml-1"></p>
+                            <button class="btn btn-success btn-score">0 Point</button>
+                            <button class="btn btn-danger btn-course">0 Course</button>
+                        </div>
+                        <div class="profile-nav mt-3">
+                            <!-- Nav pills -->
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#menu">
+                                        <i class="fa fa-user"></i>
+                                        Account Information</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu1">
+                                        <i class="fa fa-lock"></i>
+                                        Change Password</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu2">
+                                        <i class="fa fa-user-circle"></i>
+                                        Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu3">
+                                        <i class="fa fa-book"></i>
+                                        Course Management</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu4">
+                                        <i class="fa fa-address-book"></i>
+                                        <span>Trainee Management</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-xm-9">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="menu">
+                                <form method="POST" action="">
+                                    <div class="infoContent-label col-md-12">
+                                        Personal Information
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="title_ form-group col-md-12">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="FullName txt_ form-control" id="FirstName" value=""
+                                            readonly placeholder="Full Name">
+                                        <i class="fa fa-user iconUserName ic" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="title_ form-group col-md-12">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="Email txt_ form-control" id="Email" value="" id="Email"
+                                            readonly placeholder="Email">
+                                        <i class="fa fa-envelope  iconUserName ic" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="title_ form-group col-md-12">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="number" class="Phone txt_ form-control" id="Phone" value="" id="Phone"
+                                            placeholder="Phone Number">
+                                        <i class="fa fa-phone iconUserName ic" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="title_ form-group col-md-12">
+                                        <button type="button" class="btn btn-success btn--admin" value="">Update</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <br>
+                                </form>
+                            </div>
+                            <div class="tab-pane container fade" id="menu1">
+                                <form method="POST" action="">
+                                    <div class="infoContent-label col-md-12">
+                                        Change Password
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="title_ form-group col-md-12">
+                                        <label for="Oldpw">Old Password</label>
+                                        <input type="password" class="Pass txt_ form-control" id="oldPass" value=""
+                                            placeholder="Old Password">
+                                        <i class="fa fa-lock iconUserName ic" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="title_ form-group col-md-12">
+                                        <label for="Newpw">New Password</label>
+                                        <input type="password" class="newPass txt_ form-control" id="newPass" value=""
+                                            id="newPass" placeholder="New Password">
+                                        <i class="fa fa-lock  iconUserName ic" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="title_ form-group col-md-12">
+                                        <label for="Confirmpw">Confirm Password</label>
+                                        <input type="password" class="confirmPass txt_ form-control" id="confirmPass"
+                                            value="" id="confirmPass" placeholder="Confirm Password">
+                                        <i class="fa fa-lock iconUserName ic" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <button type="button" class="btn btn-primary btnChangePass" style="margin: inherit;">Access</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <br>
+                                    <!-- <div class="title_ form-group col-md-12">
+                                        <label for="address">Address</label>
+                                        <textarea type="text" class="Address txt_ form-control" id="Address" value=""
+                                            id="Address" readonly></textarea>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <br> -->
+                                </form>
+                            </div>
+                            <div class="tab-pane container fade" id="menu2">...</div>
+                            <div class="tab-pane container fade" id="menu3">
+                                <div class="infoContent-label col-md-12">
+                                    Course Management
+                                </div>
+                                <br>
+                                <div class="btn_add_remove col-md-12" style="padding: initial;">
+                                    <button type="button" data-toggle="modal" data-target="#Form-register--1" class="btn btn-success"
+                                        id="btnModall" style="margin: inherit; display: none;"><i class="fa fa-plus"></i>Add</button>
+                                    <button class="btn btn-success btn--Add-1" id="btn-Add-1"><i class="fa fa-plus"></i>Add</button>
+                                    <button type="button" class="btn btn-danger btn--remove-1" style="margin: inherit;"><i
+                                            class="fa fa-trash"></i>Remove</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Form-register--1" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center">
+                                                    <h4 class="modal-title modal-title-1 w-100 font-weight-bold">Add To
+                                                        Course</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                        id="btnmodall">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body mx-3">
+                                                    <div class="md-form mb-5">
+                                                        <i class="fa fa-key prefix grey-text"></i>
+                                                        <input type="text" id="orangeForm-text" class="form-control MaKH validate">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-number">Course
+                                                            Code</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-4">
+                                                        <i class="fa fa-book prefix grey-text"></i>
+                                                        <input type="text" id="orangeForm-khoahoc" class="form-control TenKH validate">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-name">Name
+                                                            Course</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <!-- <i class="fa fa-user-circle prefix grey-text"></i> -->
+                                                        <span data-error="wrong" class="grey-text" data-success="right"
+                                                            for="orangeForm-name">Description</span>
+                                                        <textarea type="text" id="MoTa" class="form-control validate "></textarea>
+                                                        <!-- <label data-error="wrong" data-success="right" for="orangeForm-name">Description</label> -->
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <i class="fa fa-eye prefix grey-text"></i>
+                                                        <input type="number" id="orangeForm-luotxem" class="form-control LuotXem validate">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-number">Views</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <!-- <i class="fa fa-eye prefix grey-text"></i> -->
+                                                        <span data-error="wrong" class="grey-text" data-success="right"
+                                                            for="orangeForm-name">Creator</span>
+                                                        <select id="orangeForm-nguoitao" class="form-control NguoiTao validate"></select>
+                                                        <!-- <label data-error="wrong" data-success="right" for="orangeForm-name">Creator</label> -->
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer modal-footer-1 d-flex justify-content-center">
+                                                    <button class="btn btn-deep-orange" id="ThemKH">Accept</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="bs-example widget-shadow" data-example-id="contextual-table">
+                                    <table id="dtBasic-data" class="table table-striped table-bordered table-responsive-sm"
+                                        cellspacing="0" width="100%" style="word-break: break-all;">
+                                        <thead>
+                                            <tr class="tr--tables-1">
+                                                <th scope="col" class="th-sm th-lg">#</th>
+                                                <th scope="col" class="th-sm th-lg">Course Code
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Name Course
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Creators
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Images
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Views
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Function
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="inform-table"></tbody>
+                                        <tfoot>
+                                            <tr class="tr--tables-1">
+                                                <th>#</th>
+                                                <th>Course Code</th>
+                                                <th>Name Course</th>
+                                                <th>Creators</th>
+                                                <th>Images</th>
+                                                <th>Views</th>
+                                                <th>Function</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane container fade" id="menu4">
+                                <div class="infoContent-label col-md-12">
+                                    Trainee Management
+                                </div>
+                                <br>
+                                <div class="btn-add-remove col-md-12" style="padding: initial;">
+                                    <button type="button" data-toggle="modal" data-target="#Form-register" class="btn btn-success"
+                                        id="btnModalll" style="margin: inherit; display: none;"><i class="fa fa-plus"></i>Add</button>
+                                    <button class="btn btn-success btn--Add" id="btn--Add"><i class="fa fa-plus"></i>Add</button>
+                                    <button type="button" class="btn btn-danger btn--remove" style="margin: inherit;"><i
+                                            class="fa fa-trash"></i>Remove</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Form-register" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center">
+                                                    <h4 class="modal-title modal-title-2 w-100 font-weight-bold">Student
+                                                        Registration</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                        id="btnmodall">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body mx-3">
+                                                    <div class="md-form mb-5">
+                                                        <i class="fa fa-user prefix grey-text"></i>
+                                                        <input type="text" id="orangeForm-account" class="form-control validate TaiKhoan">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-account">Account</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-4">
+                                                        <i class="fa fa-lock prefix grey-text"></i>
+                                                        <input type="password" id="orangeForm-pass " class="form-control validate MatKhau">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-pass">Your
+                                                            password</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <i class="fa fa-user-circle prefix grey-text"></i>
+                                                        <input type="text" id="orangeForm-name" class="form-control validate HoTen">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-name">Full
+                                                            Name</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <i class="fa fa-envelope prefix grey-text"></i>
+                                                        <input type="email" id="orangeForm-email" class="form-control validate Email">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your
+                                                            email</label>
+                                                    </div>
+
+                                                    <div class="md-form mb-5">
+                                                        <i class="fa fa-phone prefix grey-text"></i>
+                                                        <input type="number" id="orangeForm-number" class="form-control validate soDienThoai">
+                                                        <label data-error="wrong" data-success="right" for="orangeForm-number">Phone
+                                                            Number</label>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer modal-footer-2 d-flex justify-content-center">
+                                                    <button class="btn btn-deep-orange">Accept</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="bs-example widget-shadow" data-example-id="contextual-table">
+                                    <table id="data-basic" class="table table-striped table-bordered table-responsive-sm"
+                                        cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr class="tr--tables">
+                                                <th scope="col" class="th-sm th-lg">#</th>
+                                                <th scope="col" class="th-sm th-lg">User
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Full Name
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Email
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Phone Number
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Type Code
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                                <th scope="col" class="th-sm th-lg">Function
+                                                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="infor-table"></tbody>
+                                        <tfoot>
+                                            <tr class="tr--tables">
+                                                <th>#</th>
+                                                <th>User</th>
+                                                <th>Full Name</th>
+                                                <th>Email</th>
+                                                <th>Phone Number</th>
+                                                <th>Type Code</th>
+                                                <th>Function</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End-Information -->
+
+        <!-- Footer -->
+        <footer class="footer py-lg-5 py-3">
+            <div class="container-fluid px-lg-5 px-3">
+                <div class="row footer-section">
+                    <div class="col-md-3 footer--grid">
+                        <div class="footer-title">
+                            <h3>About Us</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
+                                consectetur
+                                sed, convallis at tellus. Nulla porttitor accumsana tincidunt.</p>
+                            <ul class="footer-social text-left mt-lg-4 mt-3">
+                                <li class="mx-2">
+                                    <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                </li>
+                                <li class="mx-2">
+                                    <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li class="mx-2">
+                                    <a href="#">
+                                        <span class="fa fa-google-plus"></span>
+                                    </a>
+                                </li>
+                                <li class="mx-2">
+                                    <a href="#">
+                                        <span class="fa fa-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li class="mx-2">
+                                    <a href="#">
+                                        <span class="fa fa-rss"></span>
+                                    </a>
+                                </li>
+                                <li class="mx-2">
+                                    <a href="#">
+                                        <span class="fa fa-vk"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer--grid">
+                        <div class="footer-title">
+                            <h3>Get in touch</h3>
+                        </div>
+                        <div class="contact-info">
+                            <h4>LOCATION:</h4>
+                            <p>0926k 4th block building, king Avenue, New York City.</p>
+                        </div>
+                        <div class="phone">
+                            <h4>CONTACT:</h4>
+                            <p>Phone: +121 098 8907 9987</p>
+                            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer--grid">
+                        <div class="footer-title">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <ul class="link">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer--grid">
+                        <div class="footer-title">
+                            <h3>Sign up for your offers</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                            <form action="#" method="post">
+                                <input type="email" class="form-control" name="email" placeholder="Enter your email..."
+                                    required>
+                                <button class="btn1">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </button>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right-code mt-4">
+                    <p class="copy-right text-center">
+                        © 2018 Goggles. All Rights Reserved | Design by
+                        <a href="#">Minh Khoa</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End-footer -->
+        <!-- scrolltop -->
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        <!-- End-scrolltop -->
+    </div>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../node_modules/mdbootstrap/js/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script> -->
+<script src="../../node_modules/mdbootstrap/js/popper.min.js"></script>
+<script src="../../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+<!-- mdbootstrap -->
+<script src="../../node_modules/mdbootstrap/js/mdb.min.js"></script>
+<!-- Sweetalert2 -->
+<script src="../../Assets/js/sweetalert2.all.min.js"></script>
+<!-- WOWjs -->
+<script src="../../Assets/js/wow.min.js"></script>
+<!-- Owlcaroul -->
+<script src="../../Assets/js/owl.carousel.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<!-- ckEditor -->
+<script src="../../Assets/plugins/ckeditor/ckeditor/ckeditor.js"></script>
+
+<!-- tables -->
+<!-- <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
+<script src="../../node_modules/mdbootstrap/js/addons/datatables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dtBasic-data').DataTable();
+
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script>
+
+<!-- bundle -->
+<!-- <script src="../../dist/user.js"></script> -->
+<script src="../../dist/admin.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#data-basic').DataTable();
+
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script>
+<!-- Responsive-tabs -->
+<script src="../../Assets/js/easy-responsive-tabs.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+
+            // Types: default, vertical, accordion   
+            type: 'default',
+
+            // Animated
+            tabTransition: 'fade', // transitions to use - normal or fade
+            tabIntime: 1500, // time for animation IN (1000 = 1s)
+            tabOuttime: 1500, // time for animation OUT (1000 = 1s)
+
+            accordionTransition: 'slide', // transitions to use - normal or slide
+            accordionIntime: 1500, // time for animation IN (1000 = 1s)
+            accordionOuttime: 1500, // time for animation OUT (1000 = 1s)
+
+            //auto or any width like 600px
+            width: 'auto',
+
+            // 100% fit in a container
+            fit: true,
+
+            // Close the panels on start, 
+            // the options 'accordion' and 'tabs' keep them closed in there respective view types
+            closed: false,
+
+            // The tab groups identifier
+            tabidentify: '',
+
+            // background color for active tabs in this group
+            activetab_bg: 'white',
+
+            // background color for inactive tabs in this group
+            inactive_bg: '#F5F5F5',
+
+            // border color for active tabs heads in this group
+            active_border_color: '#c1c1c1',
+
+            // border color for active tabs contect in this group 
+            // so that it matches the tab head border
+            active_content_border_color: '#c1c1c1',
+
+            activate: function (event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+
+        });
+        $('#verticalTab').easyResponsiveTabs({
+            type: 'vertical',
+            width: 'auto',
+            fit: true
+        });
+
+    });
+</script>
+
+<!-- <script>
+    $(document).ready(function () {
+        $('.register').click(function () {
+            $('.sign-up-regis').fadeIn(1500);
+            $('.login-form').fadeOut(1000);
+            $('.register').addClass('active');
+            $('.login--from').removeClass('active');
+        });
+        $('.login--from').click(function () {
+            $('.login-form').fadeIn(1500);
+            $('.sign-up-regis').fadeOut(1000);
+            $('.login--from').addClass('active');
+            $('.register').removeClass('active');
+        });
+    })
+</script> -->
+
+<!-- Owl -->
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            // rtl: true,
+            items: 4,
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1170: {
+                    items: 4,
+                    nav: true
+                }
+            }
+        })
+    });
+</script>
+
+<script>
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+</script>
+
+<script>
+    $('#my-course').addClass("active");
+</script>
+
+</html>
